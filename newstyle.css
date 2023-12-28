@@ -62,7 +62,7 @@ body {
   
   @media (max-width: 680px) {
     .logo {
-      width: 100px;
+      width: 100%;
     }
   
     h1 {
