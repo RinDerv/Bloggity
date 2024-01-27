@@ -1,0 +1,57 @@
+h1{
+    color:#FAEED1
+}
+
+
+.jjk-text{
+    color:rgb(173, 22, 173);
+    background-color: #F3F8FF;
+}
+
+.op-text{
+    color:red
+}
+
+.csm-text{
+    color:rgb(241, 164, 21)
+}
+ 
+.rating-score{
+    color:#0c2022;
+    background-color: #FAEED1;
+}
+
+h4[value="jjk"]{
+    color: rgb(122, 13, 122);
+    background-color: #F3F8FF
+}
+
+.jjk-review-text{
+    color:#FAEED1;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:
+
+}
+
+*{
+    background-color: #607274;
+    text-align: center;
+    color: #FAEED1;
+}
+
+.jjk-thumbnail{
+    height: 200px;
+    width: 350px;
+    
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    border: 10px solid #B2A59B;
+}
+
+
+
