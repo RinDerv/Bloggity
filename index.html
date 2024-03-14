@@ -13,11 +13,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
 </head>
 
 <body>
  
-  <div class="d-flex min-vh-100" lc-helper="background" style="background:url(./assets/images/redmoon.png)center / cover no-repeat; background-blend-mode: overlay;">
+  <div class="d-flex min-vh-100" lc-helper="background" style="background:url(./assets/images/redmoon.png)center / cover no-repeat; background-blend-mode: overlay; background-color: #444;">
     <div class="align-self-center text-center text-light col-md-8 offset-md-2">
       <div class="lc-block mb-4">
         <div editable="rich">
@@ -51,72 +53,78 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
     </div>
   </div>
    
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card">
-          <a href="./public/movie-ranking.html">
-            <img class="card-img-top" src="./assets/images/Cinema-cover.jpg" alt="movie review cover">
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="./public/movie-ranking.html" class="text-decoration-none">Movies</a></h2>
-            <p class="card-text">
-              Movie marathons + popcorn fueled analysis = my fave flicks laid bare! Click inside for a deep dive into the films that tickle my funny bone, break my heart, and everything in between. Spoiler alert: popcorn tears may occur..
-            </p>
-          </div>
+
+  <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Movies</h1>
+        <p class="lead">Movie marathons + popcorn fueled analysis = my fave flicks laid bare! Click inside for a deep dive into the films that tickle my funny bone, break my heart, and everything in between. Spoiler alert: popcorn tears may occur.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <a href="./public/movie-ranking.html"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Enter</button></a>
         </div>
       </div>
-  
-      <div class="col">
-        <div class="card">
-          <a href="./public/game-reviews.html">
-            <img class="card-img-top" src="./assets/images/games/game-cover.jpg" alt="game review cover">
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="./public/game-reviews.html" class="text-decoration-none">Games</a></h2>
-            <p class="card-text">
-              Ready to raid my controller graveyard? Click in for a loot-filled journey through the games that conquered my thumbs and heart. Pixelated nostalgia, epic wins, and maybe a few controller-rage tears await! Level up, gamers! ️
-            </p>
-          </div>
-        </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img class="rounded-lg-3" src="./assets/images/Cinema-cover.jpg" alt="" width="430">
       </div>
-  
-      <div class="col">
-        <div class="card">
-          <a href="./public/episode-reviews.html">
-            <img class="card-img-top" src="./assets/images/review-banner.png" alt="anime review cover">
-          </a>
-          <div class="card-body">
-            <h2 class="card-title"><a href="./public/episode-reviews.html" class="text-decoration-none">Episodes</a></h2>
-            <p class="card-text">
-              Prepare to cosplay-cry! Click in for a whirlwind tour of the anime that conquered my eyes and heart. Epic fights, plot twists, and maybe a waifu tear or two await. Let's go PLUS ULTRA!
-            </p>
-          </div>
-        </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img class="rounded-lg-3" src="./assets/images/games/game-cover.jpg" alt="" width="430">
       </div>
-  
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="./assets/images/redgalaxy.png" alt="regal pass cover">
-          <div class="card-body">
-            <h2 class="card-title">Regal Pass (2024)</h2>
-            <h4 class="card-subtitle mb-2 text-muted">coming soon</h4>
-            <p class="card-text">
-              Crystal ball activated! Click in for a juicy peek at 2024's must-see movies (and the verdict on that Regal Pass). Popcorn (and savings) await!
-            </p>
-          </div>
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Games</h1>
+        <p class="lead">Ready to raid my controller graveyard? Click in for a loot-filled journey through the games that conquered my thumbs and heart. Pixelated nostalgia, epic wins, and maybe a few controller-rage tears await! Level up, gamers! ️</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <a href="./public/game-reviews.html"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Enter</button></a>
         </div>
       </div>
     </div>
   </div>
+   
+  <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Episodes</h1>
+        <p class="lead">Prepare to cosplay-cry! Click in for a whirlwind tour of the anime that conquered my eyes and heart. Epic fights, plot twists, and maybe a waifu tear or two await. Let's go PLUS ULTRA!
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <a href="./public/episode-reviews.html"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Enter</button></a>
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img class="rounded-lg-3" src="./assets/images/review-banner.png" alt="" width="430">
+      </div>
+    </div>
+  </div>
+  
+    <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img class="rounded-lg-3" src="./assets/images/redgalaxy.png" alt="" width="430">
+      </div>
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Regal 2024</h1>
+        <p class="lead">COMING SOON! Crystal ball activated! Click in for a juicy peek at 2024's must-see movies (and the verdict on that Regal Pass). Popcorn (and savings) await!</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
   
   <div class="container">
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-        <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">About Me</a></li>
-        <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-body-secondary">Contact Me</a></li>
-        <li class="nav-item"><a href="./Motivation.html" class="nav-link px-2 text-body-secondary">Motivation</a></li>
+        <li class="nav-item"><a href="./public/about.html" class="nav-link px-2 text-body-secondary">About Me</a></li>
+        <li class="nav-item"><a href="./public/contact.html" class="nav-link px-2 text-body-secondary">Contact Me</a></li>
+        <li class="nav-item"><a href="./public/Motivation.html" class="nav-link px-2 text-body-secondary">Motivation</a></li>
         <li class="nav-item"><a href="https://www.youtube.com/channel/UCVQwoYvy2b5zm5glq5xpWmQ" class="nav-link px-2 text-body-secondary">Youtube</a></li>
       </ul>
       <p class="text-center text-body-secondary">© 2023 The Dojo, Inc</p>
