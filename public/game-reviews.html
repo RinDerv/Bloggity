@@ -47,24 +47,24 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
         <div class="row mb-4 mb-lg-5 justify-content-lg-between">
             <div class="col-3 col-md-1 col-lg-2 d-none d-md-flex align-items-center">
                 <div class="lc-block bg-dark ratio ratio-1x1 opacity-25" style=""> </div><!-- /lc-block -->
-                <img class="img-fluid" src="../assets/images/games/hades.jpg">
+                <img id="gameImage1"class="img-fluid" src="">
             </div><!-- /col -->
             <div class="col-4 col-md-3 col-lg-2 d-flex flex-column justify-content-between">
                 <div > </div><!-- /lc-block -->
                 <div class="lc-block">
-                    <img class="img-fluid" src="../assets/images/games/kh2.jpg">
+                    <img id="gameImage2"class="img-fluid" src="">
                 </div><!-- /lc-block -->
             </div><!-- /col -->
-            <div class="col-4 col-md-4 col-lg-3"> <img class="img-fluid" src="../assets/images/games/ffx.jpg"></div><!-- /col -->
+            <div class="col-4 col-md-4 col-lg-3"> <img id="gameImage3" class="img-fluid" src=""></div><!-- /col -->
             <div class="col-4 col-md-3 col-lg-2 d-flex flex-column justify-content-between">
                 <div class="lc-block">
-                    <img class="img-fluid" src="../assets/images/games/shadow.jpg">
+                    <img id="gameImage4"class="img-fluid" src="">
                 </div><!-- /lc-block -->
                 <div > </div><!-- /lc-block -->
             </div><!-- /col -->
             <div class="col-3 col-md-1 col-lg-2 d-none d-md-flex  align-items-center">
                 <div class="lc-block bg-dark ratio ratio-1x1 opacity-25" style=""> </div><!-- /lc-block -->
-                <img class="img-fluid" src="../assets/images/games/psycho.jpeg">
+                <img id="gameImage5"class="img-fluid" src="">
             </div><!-- /col -->
         </div>
     </div>
@@ -353,13 +353,82 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
                 <li class="nav-item"><a href="./Motivation.html" class="nav-link px-2 text-body-secondary">Motivation</a></li>
                 <li class="nav-item"><a href="https://www.youtube.com/channel/UCVQwoYvy2b5zm5glq5xpWmQ" class="nav-link px-2 text-body-secondary">Youtube</a></li>
               </ul>
-              <p class="text-center text-body-secondary">© 2023 The Dojo, Inc</p>
+              <p class="text-center text-body-secondary">© 2023 Stand Alone Complex, Inc</p>
               </footer>
         </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src ="function.js" charset="utf-8"></script>
+<script>
+
+var gamesL = [
+    "../assets/images/games/hades.jpg",
+    "../assets/images/games/bomberman.jpg",
+    "../assets/images/games/guiltygearxx.jpg",
+    "../assets/images/games/dmc2.jpg",
+    "../assets/images/games/okami.jpg",
+];
+
+var gamesLM = [
+    "../assets/images/games/kh2.jpg",
+    "../assets/images/games/batman.jpg",
+    "../assets/images/games/ACIV.webp",
+    "../assets/images/games/budokai2.webp",
+    "../assets/images/games/GoW.jpg",
+];
+
+var gamesM = [
+    "../assets/images/games/ffx.jpg",
+    "../assets/images/games/mw.jpg",
+    "../assets/images/games/redDead.jpg",
+    "../assets/images/games/bully.png",
+    "../assets/images/games/onepiece.png",
+];
+
+var gamesRM = [
+    "../assets/images/games/metal.jpg",
+    "../assets/images/games/kh1.jpg",
+    "../assets/images/games/xmeng.png",
+    "../assets/images/games/persona5.jpg",
+    "../assets/images/games/mostwanted.webp",
+];
+
+var gamesR = [
+    "../assets/images/games/psycho.jpeg",
+    "../assets/images/games/naruto.jpg",
+    "../assets/images/games/T4.webp",
+    "../assets/images/games/MvC.jpg",
+    "../assets/images/games/bbs.jpg",
+];
+
+function setRandomGame (gameId, gameArray) {
+        var randomIndex = Math.floor(Math.random() * gameArray.length);
+        var selectedGame = gameArray[randomIndex];
+        document.getElementById(gameId).src = selectedGame;
+    };
+
+window.onload = function() {
+        setRandomGame("gameImage1", gamesL);
+        setRandomGame("gameImage2", gamesLM);
+        setRandomGame("gameImage3", gamesM);
+        setRandomGame("gameImage4", gamesRM);
+        setRandomGame("gameImage5", gamesR);
+}
+
+document.querySelectorAll(".img-fluid").forEach((image) => {
+    image.addEventListener("mouseenter", (event) => {
+       
+        image.style.transform = "scale(1.1)";  
+        image.style.transition = "transform 0.3s ease";  
+    });
+
+    
+    image.addEventListener("mouseleave", (event) => {
+        image.style.transform = "scale(1)";  
+    });
+});
+    
+    </script>
 
 
 

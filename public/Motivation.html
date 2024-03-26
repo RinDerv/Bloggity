@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Motivational Picture</title>
 
-<link rel="Stylesheet" href="styl2.css">
+<link rel="Stylesheet" href="style2.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Roboto&display=swap" rel="stylesheet">
@@ -41,13 +41,30 @@ p{
 
 <body>
 <div class="motivate">
-    <a href="https://www.youtube.com/watch?v=-NEGsRc3fbA"><img class="csm2"src="../assets/images/CSM-rain.jpg" alt="csm rain motivation"></a>
+    <a href="https://www.youtube.com/watch?v=-NEGsRc3fbA"><div class="imgCC"><img class="csm2"src="../assets/images/CSM-rain.jpg" alt="csm rain motivation"></a></div>
     <h1>M I N D S E T</h1>
     <p>Even the rain can't stop that</p>
 </div>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src ="function.js" charset="utf-8"></script>
+
+
+<script>
+    document.querySelectorAll(".imgCC").forEach((image) => {
+    image.addEventListener("mouseenter", (event) => {
+       
+        image.style.transform = "scale(1.1)";  
+        image.style.transition = "transform 0.3s ease";  
+    });
+
+    
+    image.addEventListener("mouseleave", (event) => {
+        image.style.transform = "scale(1)";  
+    });
+});
+</script>
+
 
 </body>
 </html>
